@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Rubik", sans-serif;
+}
+
+.container__review {
+  width: 1440px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  margin-top: 40px;
+  grid-gap: 30px;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.review {
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 10px 14px 30px -20px rgba(0, 0, 0, 0.78);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+}
+.container__review__position{
+    position: relative;
+}
+.container__review__score {
+  background-color: hsl(223, 19%, 93%);
+  width: fit-content;
+  display: flex;
+  border-radius: 10px;
+}
+
+.review__score {
+  padding: 15px 10px 15px 10px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.review__score-plus {
+  background-color: transparent;
+  padding-bottom: 10px;
+  border: none;
+}
+.review__score span{
+    font-weight: 500;
+    color:hsl(212, 24%, 26%)
+}
+.review__score-minus {
+  background-color: transparent;
+  padding-top: 10px;
+  border: none;
+
+}
+
+.container__header__review {
+    
+    display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.time {
+  opacity: 50%;
+}
+
+.review__header-img {
+  padding: 0 10px 0 10px;
+}
+
+.review__header-reply {
+  display: flex;
+  align-content: center;
+  color: hsl(211, 10%, 45%);
+  font-size: 10px;
+  font-weight: 300;
+}
+.review__header-reply-img {
+  margin: 5px 5px 0 0;
+
+  width: 20%;
+  height: 15%;
+}
+.review__one {
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+.review__two {
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+
+.review__three {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+.review__four {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+.review__five {
+  grid-column: 2/5;
+  grid-row: 5/6;
+}
+
+.review:hover {
+  transform: scale(1.01);
+  box-shadow: none;
+}
+
+.review__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__review__score {
+  display: flex;
+  flex-direction: column;
+}
