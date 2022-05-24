@@ -1,26 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./main.css">
   <title>Frontend Mentor | Interactive comments section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  <!-- Pull dynamic content from the data.json file -->
+<body class="container">
+  <main class="container__review">
+    <div class="review review__one">
+      <div class="container__review__position">
+        <div class="container__review__score">
+          <div class="review__score">
+            <button class="review__score-plus"><img src="./images/icon-plus.svg" alt="plus-icon"></button>
+            <span>12</span>
+            <button class="review__score-minus"><img src="./images/icon-minus.svg" alt="plus-icon"></button>
+          </div>
+        </div>
+        <div class="container__review__text">
+          <div class="review__header">
+            <div class="container__header__review">
+              <img class="review__header-img" src="./images/avatars/image-amyrobson.png">
+              <p>amyrobson</p>
+              <p class="time">1 month ago</p>
+            </div>
+            <div class="review__header-reply">
+              <img class="review__header-reply-img" src="./images/icon-reply.svg">
+              <h2>Reply</h2>
+            </div>
+          </div>
+          <div class="review__body">
+            <p>Impressivel Though it seems the drag feature could be improved. But overall it
+              looks incredible. You've nailed the design and the responsiveness at various
+              breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review review__two">
+      <div class="container__review__position">
+        <div class="container__review__score">
+          <div class="review__score">
+            <button class="review__score-plus"><img src="./images/icon-plus.svg" alt="plus-icon"></button>
+            <span>12</span>
+            <button class="review__score-minus"><img src="./images/icon-minus.svg" alt="plus-icon"></button>
+          </div>
+        </div>
+        <div class="container__review__text">
+          <div class="review__header">
+            <div class="container__header__review">
+              <img class="review__header-img" src="./images/avatars/image-amyrobson.png">
+              <p>amyrobson</p>
+              <p class="time">1 month ago</p>
+            </div>
+            <div class="review__header-reply">
+              <img class="review__header-reply-img" src="./images/icon-reply.svg">
+              <h2>Reply</h2>
+            </div>
+          </div>
+          <div class="review__body">
+            <p>Impressivel Though it seems the drag feature could be improved. But overall it
+              looks incredible. You've nailed the design and the responsiveness at various
+              breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review review__three">
+      <div class="container__review__position">
+        <div class="container__review__score">
+          <div class="review__score">
+            <button class="review__score-plus"><img src="./images/icon-plus.svg" alt="plus-icon"></button>
+            <span>12</span>
+            <button class="review__score-minus"><img src="./images/icon-minus.svg" alt="plus-icon"></button>
+          </div>
+        </div>
+        <div class="container__review__text">
+          <div class="review__header">
+            <div class="container__header__review">
+              <img class="review__header-img" src="./images/avatars/image-amyrobson.png">
+              <p>amyrobson</p>
+              <p class="time">1 month ago</p>
+            </div>
+            <div class="review__header-reply">
+              <img class="review__header-reply-img" src="./images/icon-reply.svg">
+              <h2>Reply</h2>
+            </div>
+          </div>
+          <div class="review__body">
+            <p>Impressivel Though it seems the drag feature could be improved. But overall it
+              looks incredible. You've nailed the design and the responsiveness at various
+              breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review review__four">
+      <div class="container__review__position">
+        <div class="container__review__score">
+          <div class="review__score">
+            <button class="review__score-plus"><img src="./images/icon-plus.svg" alt="plus-icon"></button>
+            <span>12</span>
+            <button class="review__score-minus"><img src="./images/icon-minus.svg" alt="plus-icon"></button>
+          </div>
+        </div>
+        <div class="container__review__text">
+          <div class="review__header">
+            <div class="container__header__review">
+              <img class="review__header-img" src="./images/avatars/image-amyrobson.png">
+              <p>amyrobson</p>
+              <p class="time">1 month ago</p>
+            </div>
+            <div class="review__header-reply">
+              <img class="review__header-reply-img" src="./images/icon-reply.svg">
+              <h2>Reply</h2>
+            </div>
+          </div>
+          <div class="review__body">
+            <p>Impressivel Though it seems the drag feature could be improved. But overall it
+              looks incredible. You've nailed the design and the responsiveness at various
+              breakpoints works really well.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review review__five">
+      <div class="container__header__review--respuesta">
+        <img class="review__header-img--5" src="./images/avatars/image-amyrobson.png">
+        <form class="container__comentario"><input class="comentario" type="textarea" placeholder="Add a comment..."> </form>
+        <form class="container__enviar"><input class="enviar" type="submit" value="SEND"> </form>      
+      </div>
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
